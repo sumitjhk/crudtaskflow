@@ -28,8 +28,8 @@ app.use(helmet());
 
 // 2. CORS — allows frontend to talk to backend with cookies
 app.use(cors({
-  origin      : process.env.CLIENT_URL || 'http://localhost:3000',
-  methods     : ['GET', 'POST', 'PUT', 'DELETE'],
+  origin      : 'https://crudtaskflow-client.vercel.app',
+  methods     : ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders : ['Content-Type', 'Authorization'],
   credentials : true, // required for HTTP-only cookies to work
 }));

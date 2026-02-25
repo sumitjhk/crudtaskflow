@@ -10,8 +10,8 @@ const User   = require('../models/User');
 // ─── Cookie Options ───────────────────────────────────────────
 const cookieOptions = {
   httpOnly : true,
-  secure   : false,
-  sameSite : 'lax',
+  secure   : true,
+  sameSite : `none`,
   maxAge   : 7 * 24 * 60 * 60 * 1000
 };
 
